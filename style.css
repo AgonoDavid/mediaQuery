@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 2px solid black; */
+}
+nav {
+  border: 2px solid #fff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-items {
+  /* border: 2px solid black; */
+  width: 400px;
+  margin-top: 5px;
+}
+.nav-items a {
+  text-decoration: none;
+  margin-left: 30px;
+  color: black;
+}
+
+.container {
+  border: none;
+  max-width: 1100px;
+  margin: 30px auto;
+  display: flex;
+  box-shadow: 0px 0px 8px -3px;
+  padding: 60px;
+}
+.info {
+  /* border: 2px solid greenyellow; */
+  display: flex;
+  width: 100%;
+  gap: 50px;
+}
+.content {
+  line-height: 30px;
+}
+.content p {
+  width: 100%;
+  /* line-height: 15px; */
+  font-size: 14px;
+  letter-spacing: normal;
+  font-family: sans-serif ;
+  padding-top: 10px;
+}
+.content p span {
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+.content_text {
+  margin-top: 10px;
+}
+
+.image__card {
+  height: 45vh;
+  width: 100%;
+  max-width: 100%;
+  /* border: 2px solid blue; */
+  object-fit: cover;
+}
+.image__card img {
+  width: 100%;
+  height: 45vh;
+  border-radius: 5px;
+}
+.me {
+  margin-left: 60px;
+  margin-top: 12px;
+}
+.me p {
+  font-size: 35px;
+}
+.me_2 p {
+  margin-top: 70px;
+  font-size: 20px;
+  line-height: 2;
+  width: 88%;
+}
+#services {
+  max-width: 1100px;
+  margin: auto;
+  /* border: 2px solid black; */
+}
+.service_cont {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  text-align: center;
+}
+.card {
+    border: none;
+    width: 100%;
+    height: 50vh;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 6px 15px -3px ;
+    border-radius: 16px;
+    padding: 0px 10px;
+    /* border: 2px solid red; */
+  }
+.card h3 {
+    color: #1e1e1e;
+    font-size: 22px;
+    padding-top: 30px;
+}
+.card h4 {
+    color: #4e4e4e;
+    font-size: 16px;
+    padding-top: 50px;
+    line-height: 2;
+}
+/* Media query styling */
+
+@media (min-width: 350px) and (max-width: 500px) {
+  .nav-items {
+    display: none;
+  }
+  nav>h1 {
+     padding-right: 280px;
+  }
+  .service_cont{
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
